@@ -1,338 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="ar" dir="rtl">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المهمات المدرسية</title>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  
   <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-      margin: 0;
-      background-color: #fefaf6;
-      color: #2f2f2f;
-    }
-
-    nav {
-      background-color: #fffaf3;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      padding: 15px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 15px;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #c5a46d;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f6e6cc, #f3d8b6);
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-      color: #2b2b2b;
-    }
-
-    header h2 {
-      font-size: 1.2rem;
-      color: #6b6b6b;
-      margin-bottom: 25px;
-    }
-
-    section {
-      padding: 80px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .achievement {
-      background-color: #fffaf3;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .sub-section img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    .achievement img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
-    footer {
-      background-color: #2b2b2b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      font-size: 0.9rem;
-    }
-    .subject {
-  background-color: #fffaf3;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  text-align: right;
-    }
-
-.subject h4 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-  color: #2b2b2b;
-  border-bottom: 2px solid #f3d8b6;
-  padding-bottom: 10px;
-    }
-
-.sub-section {
-  margin-bottom: 25px;
-  padding-right: 10px;
-    }
-
-.sub-section h5 {
-  color: #333;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-    }
-
-.sub-section ul {
-  list-style: none;
-  padding: 0;
-    }
-
-.sub-section li {
-  background-color: #fef6e9;
-  margin-bottom: 8px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  transition: 0.3s;
-    }
-
-.sub-section li:hover {
-  background-color: #f3e0be;
-    }
-
-.sub-section a {
-  color: #2b2b2b;
-  text-decoration: none;
-  font-weight: 500;
-    }
-
-
+    body {font-family:'Tajawal',sans-serif;margin:0;background-color:#fefaf6;color:#2f2f2f;}
+    nav {background-color:#fffaf3;box-shadow:0 2px 5px rgba(0,0,0,0.05);padding:15px 0;text-align:center;position:sticky;top:0;z-index:10;}
+    nav a{text-decoration:none;color:#333;margin:0 15px;font-weight:500;transition:0.3s;}
+    nav a:hover{color:#c5a46d;}
+    header{background:linear-gradient(135deg,#f6e6cc,#f3d8b6);padding:100px 20px;text-align:center;}
+    header h1{font-size:2.8rem;margin-bottom:10px;font-weight:700;color:#2b2b2b;}
+    header h2{font-size:1.2rem;color:#6b6b6b;margin-bottom:25px;}
+    section{padding:80px 20px;text-align:center;max-width:900px;margin:auto;}
+    section h3{font-size:2rem;margin-bottom:30px;}
+    .achievement,.subject{background-color:#fffaf3;margin:20px 0;padding:20px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+    .sub-section img,.achievement img{max-width:100%;border-radius:8px;margin-top:10px;}
+    footer{background-color:#2b2b2b;color:white;text-align:center;padding:20px;margin-top:50px;font-size:0.9rem;}
+    .subject{text-align:right;}
+    .subject h4{font-size:1.6rem;margin-bottom:20px;color:#2b2b2b;border-bottom:2px solid #f3d8b6;padding-bottom:10px;}
+    .sub-section{margin-bottom:25px;padding-right:10px;}
+    .sub-section h5{color:#333;margin-bottom:10px;font-size:1.2rem;}
+    .sub-section ul{list-style:none;padding:0;}
+    .sub-section li{background-color:#fef6e9;margin-bottom:8px;padding:10px 12px;border-radius:8px;transition:0.3s;}
+    .sub-section li:hover{background-color:#f3e0be;}
+    .sub-section a{color:#2b2b2b;text-decoration:none;font-weight:500;}
   </style>
 </head>
 
 <body>
-    <nav>
+  <nav>
     <a href="index.html">النبذة</a>
     <a href="achievements.html">الإنجازات</a>
     <a href="tasks.html">المهمات المدرسية</a>
     <a href="contact.html">تواصل معي</a>
   </nav>
-</body>  
-<section>
-  <h3>المهمات المدرسية</h3>
 
-  
+  <section>
+    <h3>المهمات المدرسية</h3>
 
-  <div class="subject">
-    <h4>التفكير الناقد</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="files/ورقة عمل التفكير العلمي والإبداعي والناقد.pdf" target="_blank">ورقة عمل التفكير العلمي والابداعي والناقد</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\المناظرة.pdf" target="_blank">المناظرة</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\تفكير ناقد - اناقش مع عائلتي (1).docx.lnk" target="_blank">اناقش مع عائلتي</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Modern watercolor beige space galaxy birthday invitation.png" target="_blank">مهمة تعويضية</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> الملخصات</h5>
-      <ul>
-        <li><a href="files/arabic-summary.pdf" target="_blank">-</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> المهمات</h5>
-      <ul>
-        <li><a href="files/arabic-task.pdf" target="_blank">-</a></li>
-      </ul>
-    </div>
-  </div>
-
-
-
-  <div class="subject">
-    <h4>حاسب آلي</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\بنية جهاز الحاسب Worksheet.docx" target="_blank">ورقة عمل بنية جهاز الحاسب</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\الجهاز (1).pdf" target="_blank">الواجب من ص53-ص58</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\H.W.pdf" target="_blank">الواجب من ص22-24</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\H.W.pdf" target="_blank">الواجب من ص22-24</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\__محول باستخدام البايثون_.pdf" target="_blank">محول باستخدام البايثون</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\__محول باستخدام البايثون_.pdf" target="_blank">محول باستخدام البايثون</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\4e4a4532-bd3e-44f4-9e56-7258fe81dca5 (1).jpg" target="_blank" ></a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\394e1c4c-6e6b-4eeb-986a-7ea37722a970 (1).jpg" target="_blank"></a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> المهمات</h5>
-      <ul>
-        <li><a href="files/arabic-summary.pdf" target="_blank">-</a></li>
-        <li>-</li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> الملخصات</h5>
-      <ul>
-        <li><a href="files/arabic-task.pdf" target="_blank">-</a></li>
-        <li>-</li>
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="subject">
-    <h4>تفسير</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="files/arabic-homework.pdf">-</a></li>
-        <li></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> المهمات</h5>
-      <ul>
-        <li><a href="https://padlet.com/t158934/102-khko9m4j2f94ak5v" target="_blank">رابط البادلت</a></li>
-        <li>-</li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> الملخصات</h5>
-      <ul>
-        <li><a href="files/arabic-task.pdf" target="_blank">-</a></li>
-        <li>-</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subject">
-    <h4>كفايات لغوية</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="files/arabic-homework.pdf" target="_blank">-</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> المهمات</h5>
-      <ul>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\إضافة نص تكميلي قصير (1).pdf" target="_blank">واجب</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\إضافة نص تكميلي قصير (2).pdf" target="_blank">واجب</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\إضافة نص تكميلي قصير.pdf" target="_blank">واجب</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> الملخصات</h5>
-      <ul>
-         <li><a href="C:\Users\alasi\Desktop\myproject\files\كفايات لغوية (2).pdf" target="_blank">ملخص كفايات</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="subject">
-    <h4>انجليزي</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Black and White Classic Professional Job Cover Letter.pdf" target="_blank">cover letter</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> المهمات</h5>
-      <ul>
-        <li><a href="files/arabic-summary.pdf" target="_blank">-</a></li>
-      </ul>
+    <div class="subject">
+      <h4>التفكير الناقد</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul>
+          <li><a href="files/ورقة عمل التفكير العلمي والإبداعي والناقد.pdf" target="_blank">ورقة عمل التفكير العلمي والإبداعي والناقد</a></li>
+          <li><a href="files/المناظرة.pdf" target="_blank">المناظرة</a></li>
+          <li><a href="files/تفكير ناقد - اناقش مع عائلتي (1).docx" target="_blank">أناقش مع عائلتي</a></li>
+          <li><a href="files/Modern watercolor beige space galaxy birthday invitation.png" target="_blank">مهمة تعويضية</a></li>
+        </ul>
+      </div>
+      <div class="sub-section">
+        <h5>الملخصات</h5>
+        <ul><li><a href="files/arabic-summary.pdf" target="_blank">-</a></li></ul>
+      </div>
+      <div class="sub-section">
+        <h5>المهمات</h5>
+        <ul><li><a href="files/arabic-task.pdf" target="_blank">-</a></li></ul>
+      </div>
     </div>
 
     <div class="subject">
-    <h4>python</h4>
-
-    <div class="sub-section">
-      <h5> الواجبات</h5>
-      <ul>
-        <li><a href="files/arabic-homework.pdf" target="_blank">-</a></li>
-      </ul>
-    </div>
-
-    <div class="sub-section">
-      <h5> الملخصات</h5>
-      <ul>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Loops.docx.lnk" target="_blank">loops</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Python essentials 1.docx.lnk" target="_blank">PYTHON - week 1</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Python essentials week 3-4 fixed.pdf" target="_blank">PYTHON - week 3-4</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Python final review.pdf" target="_blank">final review unit 1</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\Python_Final_Review_Clean.docx" target="_blank">final review unit 2</a></li>
-      </ul>
+      <h4>حاسب آلي</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul>
+          <li><a href="files/بنية جهاز الحاسب Worksheet.docx" target="_blank">ورقة عمل بنية جهاز الحاسب</a></li>
+          <li><a href="files/الجهاز (1).pdf" target="_blank">الواجب من ص53-ص58</a></li>
+          <li><a href="files/H.W.pdf" target="_blank">الواجب من ص22-24</a></li>
+          <li><a href="files/__محول باستخدام البايثون_.pdf" target="_blank">محول باستخدام البايثون</a></li>
+          <li><a href="files/4e4a4532-bd3e-44f4-9e56-7258fe81dca5 (1).jpg" target="_blank">صورة 1</a></li>
+          <li><a href="files/394e1c4c-6e6b-4eeb-986a-7ea37722a970 (1).jpg" target="_blank">صورة 2</a></li>
+        </ul>
+      </div>
+      <div class="sub-section">
+        <h5>المهمات</h5>
+        <ul><li><a href="files/arabic-summary.pdf" target="_blank">-</a></li></ul>
+      </div>
+      <div class="sub-section">
+        <h5>الملخصات</h5>
+        <ul><li><a href="files/arabic-task.pdf" target="_blank">-</a></li></ul>
+      </div>
     </div>
 
     <div class="subject">
-    <h4>ملفات مهمة </h4>
-
-    <div class="sub-section">
-      <h5> الملفات</h5>
-      <ul>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\جدول الحصص الدراسية اكادمية طويق (1).pdf" target="_blank">جدول الحصص الدراسية</a></li>
-        <li><a href="files/قالب رفع المشاريع 2026.pdf" target="_blank">قالب رفع المشاريع 2026 ابداع</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\خطوات ودورة البحث العلمي في الأولمبياد الوطني للإبداع العلمي.docx" target="_blank">خطوات ودورةالبحث العلمي في الأولمبياد</a></li>
-        <li><a href="C:\Users\alasi\Desktop\myproject\files\دليل هوية مدرسة طويق المبسط للمشاركة.pdf" target="_blank">دليل هوية طويق</a></li>
-      </ul>
+      <h4>تفسير</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul><li><a href="files/arabic-homework.pdf" target="_blank">-</a></li></ul>
+      </div>
+      <div class="sub-section">
+        <h5>المهمات</h5>
+        <ul>
+          <li><a href="https://padlet.com/t158934/102-khko9m4j2f94ak5v" target="_blank">رابط البادلت</a></li>
+        </ul>
+      </div>
+      <div class="sub-section">
+        <h5>الملخصات</h5>
+        <ul><li><a href="files/arabic-task.pdf" target="_blank">-</a></li></ul>
+      </div>
     </div>
 
-  
-</section>
+    <div class="subject">
+      <h4>كفايات لغوية</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul><li><a href="files/arabic-homework.pdf" target="_blank">-</a></li></ul>
+      </div>
+      <div class="sub-section">
+        <h5>المهمات</h5>
+        <ul>
+          <li><a href="files/إضافة نص تكميلي قصير (1).pdf" target="_blank">واجب</a></li>
+          <li><a href="files/إضافة نص تكميلي قصير (2).pdf" target="_blank">واجب</a></li>
+          <li><a href="files/إضافة نص تكميلي قصير.pdf" target="_blank">واجب</a></li>
+        </ul>
+      </div>
+      <div class="sub-section">
+        <h5>الملخصات</h5>
+        <ul><li><a href="files/كفايات لغوية (2).pdf" target="_blank">ملخص كفايات</a></li></ul>
+      </div>
+    </div>
 
+    <div class="subject">
+      <h4>انجليزي</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul><li><a href="files/Black and White Classic Professional Job Cover Letter.pdf" target="_blank">cover letter</a></li></ul>
+      </div>
+    </div>
+
+    <div class="subject">
+      <h4>Python</h4>
+      <div class="sub-section">
+        <h5>الواجبات</h5>
+        <ul><li><a href="files/arabic-homework.pdf" target="_blank">-</a></li></ul>
+      </div>
+      <div class="sub-section">
+        <h5>الملخصات</h5>
+        <ul>
+          <li><a href="files/Loops.docx" target="_blank">loops</a></li>
+          <li><a href="files/Python essentials 1.docx" target="_blank">PYTHON - week 1</a></li>
+          <li><a href="files/Python essentials week 3-4 fixed.pdf" target="_blank">PYTHON - week 3-4</a></li>
+          <li><a href="files/Python final review.pdf" target="_blank">final review unit 1</a></li>
+          <li><a href="files/Python_Final_Review_Clean.docx" target="_blank">final review unit 2</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subject">
+      <h4>ملفات مهمة</h4>
+      <div class="sub-section">
+        <h5>الملفات</h5>
+        <ul>
+          <li><a href="files/جدول الحصص الدراسية اكادمية طويق (1).pdf" target="_blank">جدول الحصص الدراسية</a></li>
+          <li><a href="files/قالب رفع المشاريع 2026.pdf" target="_blank">قالب رفع المشاريع 2026 ابداع</a></li>
+          <li><a href="files/خطوات ودورة البحث العلمي في الأولمبياد الوطني للإبداع العلمي.docx" target="_blank">خطوات ودورة البحث العلمي في الأولمبياد</a></li>
+          <li><a href="files/دليل هوية مدرسة طويق المبسط للمشاركة.pdf" target="_blank">دليل هوية طويق</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>© 2025 جميع الحقوق محفوظة</footer>
+</body>
+</html>
